@@ -1,0 +1,32 @@
+.lead__banner {
+  max-width: 320px;
+  max-height: 200px;
+  width: 100%;
+  background-size: contain;
+  background-image: url("../../../images/lead/lead__car-coach.jpg");
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: center;
+  overflow: visible;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .lead__banner {
+    max-width: 768px;
+    max-height: 480px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .lead__banner {
+    max-width: 928px;
+    max-height: 580px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .lead__banner {
+    max-width: 984px;
+    max-height: 615px;
+  }
+}

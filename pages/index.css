@@ -2,5 +2,6 @@
 @import url(../vendor/fonts.css);
 @import url(../blocks/global/global.css);
 @import url(../blocks/menu-item/menu-item.css);
+@import url(../blocks/menu-list/menu-list.css);
 /* Watermark. To be removed */
 @import url(../vendor/--save-dev.css);

@@ -1,0 +1,59 @@
+/* Отладочные свойства , снять перед выкаткой в тестовую эксплуатацию / Dev-deps, to be removed before staging
+
+
+    Выделение тэгов блоков стилем границ / Block tag distinguishing by border style */
+
+header {
+    border-style: groove;
+    border-color: lightslategrey;
+}
+
+main {
+    border-style: double;
+    border-color: lightslategrey;
+}
+
+footer {
+    border-style: ridge;
+    border-color: lightslategrey;
+}
+
+div {
+    border-style: solid;
+    border-color: lightslategrey;
+}
+
+section {
+    border-style: dotted;
+    border-color: lightslategrey;
+}
+
+article {
+    border-style: dashed;
+    border-color: lightslategrey;
+}
+
+h1 {
+    border-style: ridge;
+    border-color: thistle;
+}
+
+h2 {
+    border-style: ridge;
+    border-color: lightpink;
+}
+
+p {
+    border-style: groove;
+    border-color: lightsalmon;
+}
+
+nav {
+    border-style: ridge;
+    border-color: navajowhite;
+}
+
+img {
+    border-style: dotted;
+    border-color: palevioletred;
+}

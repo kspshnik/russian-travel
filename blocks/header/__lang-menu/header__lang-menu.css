@@ -4,5 +4,11 @@
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  flex-basis: 90px;
+  flex-basis: 62px;
+}
+
+@media screen and (min-width: 769 px) {
+  .header__lang-menu {
+    flex-basis: 78px;
+  }
 }

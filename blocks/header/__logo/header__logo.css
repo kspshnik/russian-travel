@@ -7,7 +7,7 @@
   height: 52px;
 }
 
-@media screen and (max-width: 7769 px) {
+@media screen and (min-width: 769px) {
   .header__logo {
     background-size: auto 52px;
   }

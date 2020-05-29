@@ -3,5 +3,5 @@
 @import url(../blocks/global/global.css);
 @import url(../blocks/menu-item/menu-item.css);
 @import url(../blocks/menu-list/menu-list.css);
-/* Watermark. To be removed */
-@import url(../vendor/--save-dev.css);
+@import url(../blocks/header/header.css) /* Watermark. To be removed */ @import
+  url(../vendor/--save-dev.css);

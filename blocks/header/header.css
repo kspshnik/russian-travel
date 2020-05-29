@@ -1,0 +1,29 @@
+@import url(./__lang-menu/header__lang-menu.css);
+@import url(./__language/header__language.css);
+@import url(./__language/_selected/header__language_selected.css);
+@import url(./__logo/header__logo.css);
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: calc(16px * (1 + 0.02678 * (100vw - 320px)))
+    calc(16px * (1 + 0.01639 * (100vw - 320px))) 0
+    calc(16px * (1 + 0.01639 * (100vw - 320px)));
+}
+
+@media screen and (max-width: 769px) {
+  .header {
+    margin: 28px calc(16px * (1 + 0.09375 * (100vw - 320px))) 0
+      calc(16px * (1 + 0.09375 * (100vw - 320px)));
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .header {
+    margin: 28px 48px 0 48px;
+  }
+}

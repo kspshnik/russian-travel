@@ -1,0 +1,8 @@
+.header__lang-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 90px;
+}

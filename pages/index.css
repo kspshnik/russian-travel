@@ -1,5 +1,6 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
 @import url(../blocks/global/global.css);
+@import url(../blocks/menu-item/menu-item.css);
 /* Watermark. To be removed */
 @import url(../vendor/--save-dev.css);

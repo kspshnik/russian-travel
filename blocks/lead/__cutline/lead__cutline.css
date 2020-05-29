@@ -22,8 +22,13 @@
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
   .lead__cutline {
     margin: 8px auto auto calc((100vw - 984px) / 2);
   }
 }
+
+@media screen and (min-width: 1281px) {
+  .lead__cutline {
+    margin: 8px auto auto 148px;
+  }

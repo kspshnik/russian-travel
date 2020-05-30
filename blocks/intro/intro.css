@@ -1,0 +1,13 @@
+@import url(./__heading/intro__heading.css);
+@import url(./__main-text/intro__main-text.css);
+@import url(./__facts-and-figures/intro__facts-and-figures.css);
+@import url(./__fact/intro__fact.css);
+@import url(./__figure/intro__figure.css);
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin: 80px auto 0 auto;
+  padding: 0;
+}

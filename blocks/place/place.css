@@ -10,10 +10,26 @@
   flex-direction: column;
   align-items: center;
   margin: 0 0 72px 0;
+  min-width: 320px;
+  max-width: 720px;
 }
 
-@media screen and (min-width: 767px) and (max-width: 1279px) {
+@media screen and (min-width: 767px) and (max-width: 1023px) {
   .place {
+    max-width: 928px;
+    min-width: 720px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px minmax(400px, auto);
+    grid-column-gap: 30px;
+    grid-row-gap: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .place {
+    max-width: 984px;
+    min-width: 928px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 50px minmax(400px, auto);
@@ -24,6 +40,7 @@
 
 @media screen and (min-width: 1280px) {
   .place {
+    width: 984px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 50px minmax(400px, auto);

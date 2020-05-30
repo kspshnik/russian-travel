@@ -1,0 +1,15 @@
+.cover__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(42, 44, 47, 0.3);
+  transition: 0.5s linear;
+  z-index: 3;
+}
+
+.cover__overlay:hover {
+  background-color: rgba(42, 44, 47, 0.8);
+}

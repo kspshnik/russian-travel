@@ -1,0 +1,45 @@
+@import url(./__overlay/cover__overlay.css);
+@import url(./__link/cover__link.css);
+@import url(./__title/cover__title.css);
+@import url(./__subtitle/cover__subtitle.css);
+.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  height: calc(0.625 * 100vw);
+  background-image: url(../../images/trains_to_sunset.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+}
+@media screen and (min-width: 321px) and (max-width: 767px) {
+  .cover {
+    min-width: 320px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .cover {
+    min-width: 768px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .cover {
+    min-width: 320px;
+    max-width: 1184px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .cover {
+    width: 1184px;
+  }
+}

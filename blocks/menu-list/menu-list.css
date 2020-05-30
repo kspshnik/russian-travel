@@ -1,0 +1,6 @@
+.menu-list {
+  list-style: none outside;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}

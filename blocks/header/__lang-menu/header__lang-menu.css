@@ -5,6 +5,9 @@
   align-items: center;
   justify-content: space-between;
   flex-basis: 62px;
+  list-style: none outside;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (min-width: 769 px) {

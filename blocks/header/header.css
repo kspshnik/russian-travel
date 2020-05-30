@@ -9,19 +9,28 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 1280px;
-  margin: 5% 5% 0 5%;
+  width: 288px;
+  margin: 16px auto 0 auto;
 }
 
 @media screen and (min-width: 321px) and (max-width: 768px) {
   .header {
-    margin: 28px 3% 0 3%;
+    margin: 0;
+    width: calc(288px + 0.9643 * (100vw - 320px));
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .header {
+    margin: 0;
+    width: calc(720px + 0.09375 * (100vw - 768px));
+  }
+}
+
+@media screen and (min-width: 1024px) {
   .header {
     margin: 28px 48px 0 48px;
+    width: 100%;
+    max-width: 1280px;
   }
 }

@@ -18,31 +18,10 @@
   position: relative;
   z-index: 1;
 }
-@media screen and (min-width: 321px) and (max-width: 767px) {
+@media screen and (min-width: 1184px) {
   .cover {
     min-width: 320px;
-    width: 100vw;
-    height: calc(0.625 * 100vw);
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .cover {
-    min-width: 768px;
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .cover {
-    min-width: 320px;
-    max-width: 1184px;
-    width: 100vw;
-    height: calc(0.625 * 100vw);
-  }
-}
-@media screen and (min-width: 1280px) {
-  .cover {
     width: 1184px;
+    height: 740px;
   }
 }

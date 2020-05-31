@@ -1,7 +1,6 @@
 .lead__banner {
-  max-width: 320px;
-  max-height: 200px;
-  width: 100%;
+  width: 100vw;
+  height: calc(0.625 * 100vw);
   background-size: contain;
   background-image: url("../../../images/lead/lead__car-coach.jpg");
   background-repeat: no-repeat;
@@ -10,23 +9,30 @@
   overflow: visible;
 }
 
-@media screen and (min-width: 321px) and (max-width: 768px) {
+@media screen and (min-width: 769px) and (max-width: 927px) {
   .lead__banner {
-    max-width: 768px;
-    max-height: 480px;
+    width: 100vw;
+    height: calc(0.625 * 100vw);
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 928px) and (max-width: 1023px) {
   .lead__banner {
-    max-width: 928px;
-    max-height: 580px;
+    width: 928px;
+    height: 580px;
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
   .lead__banner {
-    max-width: 984px;
-    max-height: 615px;
+    width: calc(928px + 0.21875 * (1280px - 100vw));
+    height: calc(0.625 * (928px + 0.21875 * (1280px - 100vw)));
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .lead__banner {
+    width: 984px;
+    height: 615px;
   }
 }

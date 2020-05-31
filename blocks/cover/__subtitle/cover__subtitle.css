@@ -4,7 +4,7 @@
   line-height: 1.14;
   text-align: center;
   margin: 0 auto;
-  z-index: 2;
+  z-index: 3;
   width: calc(288px + (100vw - 320px) * 0.1786);
 }
 

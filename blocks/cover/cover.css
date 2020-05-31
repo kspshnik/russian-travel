@@ -16,11 +16,13 @@
   background-size: cover;
   margin: 0 auto;
   position: relative;
+  z-index: 1;
 }
 @media screen and (min-width: 321px) and (max-width: 767px) {
   .cover {
     min-width: 320px;
-    width: 100%;
+    width: 100vw;
+    height: calc(0.625 * 100vw);
   }
 }
 
@@ -35,7 +37,8 @@
   .cover {
     min-width: 320px;
     max-width: 1184px;
-    width: 100%;
+    width: 100vw;
+    height: calc(0.625 * 100vw);
   }
 }
 @media screen and (min-width: 1280px) {

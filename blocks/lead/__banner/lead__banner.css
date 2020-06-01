@@ -26,7 +26,7 @@
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .lead__banner {
     width: calc(928px + 0.21875 * (1280px - 100vw));
-    height: calc(0.625 * (928px + 0.21875 * (1280px - 100vw)));
+    height: calc(0.625 * (928px + 0.21875 * (100vw - 1024px)));
   }
 }
 

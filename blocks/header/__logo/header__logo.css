@@ -1,14 +1,16 @@
 .header__logo {
   background-image: url(../../../images/logo.svg);
-  background-size: auto 42px;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width: 176px;
-  height: 52px;
+  width: calc(142px + 0.075892 * (100vw - 768px));
+  height: calc(42px + 0.02049 * (100vw - 768px));
+  margin: 0;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .header__logo {
-    background-size: auto 52px;
+    height: 52px;
+    width: 176px;
   }
 }

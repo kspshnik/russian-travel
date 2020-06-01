@@ -6,14 +6,34 @@
   line-height: 1.25;
   width: 288px;
   text-align: center;
-  margin: 50px auto 80px auto;
+  margin: calc(16px + 0.035714 * (100vw - 320px)) auto
+    calc(40px + 0.035714 * (100vw - 320px)) auto;
   border: none;
 }
 
-@media screen and (max-width: 768 px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .lead__subtitle {
     font-size: 30px;
     line-height: 1.2;
     width: 640px;
+    margin: 32px auto 56px auto;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .lead__subtitle {
+    font-size: 30px;
+    line-height: 1.2;
+    width: 640px;
+    margin: 32px auto calc(56px + (8 / 256) * (100vw - 1024px)) auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .lead__subtitle {
+    font-size: 30px;
+    line-height: 1.2;
+    width: 640px;
+    margin: 32px auto 64px auto;
   }
 }

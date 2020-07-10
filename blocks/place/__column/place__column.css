@@ -16,7 +16,7 @@
     min-width: 450px;
   }
 }
-@media screen and (max-width: 1280 px) {
+@media screen and (max-width: 1280px) {
   .place__column {
     min-width: 490px;
   }

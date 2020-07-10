@@ -9,13 +9,6 @@
   overflow: visible;
 }
 
-@media screen and (min-width: 769px) and (max-width: 927px) {
-  .lead__banner {
-    width: 100vw;
-    height: calc(0.625 * 100vw);
-  }
-}
-
 @media screen and (min-width: 928px) and (max-width: 1023px) {
   .lead__banner {
     width: 928px;

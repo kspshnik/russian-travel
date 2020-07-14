@@ -7,7 +7,10 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 0;
+  padding-top: 0;
+  padding-right: var(--padding);
+  padding-bottom: 0;
+  padding-left: var(--padding);
   margin: 0;
   width: 100%;
 }

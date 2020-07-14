@@ -1,12 +1,17 @@
 .lead__cutline {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 10px;
-    line-height: 1.2;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    align-self: flex-start;
-    margin-block-end: 0;
-    padding: 8px var(--padding) 0 var(--padding);
-    text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  align-self: flex-start;
+  margin-block-end: 0;
+  text-align: left;
+}
+
+@media screen and (min-width: 928px) and (max-width: 1023px) {
+  .lead__cutline {
+    padding-left: calc((100vw - 928px) / 2);
+  }
 }

@@ -1,17 +1,23 @@
 .header__lang-menu {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
-  flex-basis: 62px;
-  list-style: none outside;
-  margin: 0;
-  padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 62px;
+    list-style: none outside;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .header__lang-menu {
+        flex-basis: calc(62px + (14 / 448) * (100vw - var(--width-xs)));
+    }
 }
 
 @media screen and (min-width: 768px) {
-  .header__lang-menu {
-    flex-basis: 76px;
-  }
+    .header__lang-menu {
+        flex-basis: 76px;
+    }
 }

@@ -3,18 +3,24 @@
     --logo-width_s-plus: 176px;
     --logo-ar: 0.2956;
     --logo-width: var(--logo-width_xs);
+    --logo-height: calc(var(--logo-width) * var(--logo-ar));
     background-image: url(../../../images/logo.svg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     width: var(--logo-width);
-    height: calc(var(--logo-heigth));
+    height: calc(var(--logo-height));
     margin: 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .header__logo {
+        --logo-width: calc(var(--logo-width_xs) + (34 / 448) * (100vw - var(--width-xs)));
+    }
 }
 
 @media screen and (min-width: 768px) {
     .header__logo {
-        height: 52px;
-        width: 176px;
+        --logo-width: 176px;
     }
 }

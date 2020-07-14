@@ -1,42 +1,42 @@
 :root {
-    --width-xs: 320px;
-    --width-s: 768px;
-    --width-m: 1024px;
-    --width-l: 1280px;
-    --padding-xs: 16px;
-    --padding-s: 24px;
-    --padding-m: 48px;
-    --padding-l: 148px;
-    --padding-diff: 100px;
+    --width-xs: 320;
+    --width-s: 768;
+    --width-m: 1024;
+    --width-l: 1280;
+    --padding-xs: 16;
+    --padding-s: 24;
+    --padding-m: 48;
+    --padding-l: 148;
+    --padding-diff: 100;
 }
 
 @media screen and (max-width:319px) {
      :root {
-        --width: var(--width-xs);
-        --padding: var(--padding-xs);
+        --width: calc(var(--width-xs) * 1px);
+        --padding: calc(var(--padding-xs) * 1px);
     }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
      :root {
-        --padding: calc(var(--padding-xs) + (((100vw - var(--width-xs))*var(--padding-s))/(var(--width-s) - var(--width-xs))));
+        --padding: calc((var(--padding-xs) + (((100vw - var(--width-xs))*var(--padding-s))/(var(--width-s) - var(--width-xs)))) * 1px);
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
      :root {
-        --padding: calc(var(--padding-s) + (((100vw - var(--width-s))*var(--padding-m))/(var(--width-m) - var(--width-s))));
+        --padding: calc((var(--padding-s) + (((100vw - var(--width-s))*var(--padding-m))/(var(--width-m) - var(--width-s)))) * 1px);
     }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
      :root {
-        --padding: calc(var(--padding-m) + (((100vw - var(--width-m))*var(--padding-l))/(var(--width-l) - var(--width-m))));
+        --padding: calc((var(--padding-m) + (((100vw - var(--width-m))*var(--padding-l))/(var(--width-l) - var(--width-m)))) * 1px);
     }
 }
 
 @media screen and (min-width: 1280px) {
      :root {
-        --padding: var(--padding-l);
+        --padding: var(--padding-l) * 1px;
     }
 }

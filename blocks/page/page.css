@@ -12,6 +12,6 @@
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     margin: 0 auto;
-    max-width: 1280px;
+    max-width: 100vw;
     box-sizing: border-box;
 }

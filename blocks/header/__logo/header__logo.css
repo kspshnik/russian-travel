@@ -2,12 +2,13 @@
     --logo-width_xs: 142px;
     --logo-width_s-plus: 176px;
     --logo-ar: 0.2956;
+    --logo-width: var(--logo-width_xs);
     background-image: url(../../../images/logo.svg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: calc(142px + 0.075892 * (100vw - 768px));
-    height: calc(42px + 0.02049 * (100vw - 768px));
+    width: var(--logo-width);
+    height: calc(var(--logo-heigth));
     margin: 0;
 }
 

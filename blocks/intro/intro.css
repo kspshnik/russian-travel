@@ -4,11 +4,10 @@
 @import url(./__fact/intro__fact.css);
 @import url(./__figure/intro__figure.css);
 .intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 var(--padding);
+    box-sizing: border-box;
 }

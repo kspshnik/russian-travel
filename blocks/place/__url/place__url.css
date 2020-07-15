@@ -1,15 +1,18 @@
 .place__url {
-  display: block;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.22;
-  text-align: left;
-  margin: 0;
+    box-sizing: border-box;
+    display: block;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: left;
+    margin: 0;
+    color: #ffffff;
 }
 
 .place__url:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
+
 .place__url:visited {
-  color: white;
+    color: #ffffff;
 }

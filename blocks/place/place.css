@@ -6,45 +6,52 @@
 @import url(./__column/place__column.css);
 @import url(./__description/place__description.css);
 .place {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto 75px auto;
-  min-width: 320px;
-  max-width: 720px;
+	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 32px;
+	margin: 0;
 }
 
-@media screen and (min-width: 767px) and (max-width: 1023px) {
-  .place {
-    max-width: 928px;
-    min-width: 720px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: minmax(50px, auto) minmax(400px, auto);
-    grid-column-gap: 30px;
-    grid-row-gap: 50px;
-  }
+@media screen and (min-width: 320px) and (max-width: 629px) {
+	.place {
+		gap: calc(32px + (100vw - 320px) * (10 / 300));
+	}
+}
+
+@media screen and (min-width: 621px) and (max-width: 767px) {
+	.place {
+		grid-template-rows: repeat(2, auto);
+		grid-template-columns: repeat(2, auto);
+		row-gap: calc(42px + (100vw - 620px) * (6 / 148));
+		column-gap: calc(25px + (100vw - 620px) * (3 / 148));
+		padding: 0 var(--padding);
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.place {
+		grid-template-rows: repeat(2, auto);
+		grid-template-columns: repeat(2, auto);
+		row-gap: 48px;
+		column-gap: calc(28px + (100vw - 768px) * (4 / 256));
+	}
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .place {
-    max-width: 984px;
-    min-width: 928px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: minmax(50px, auto) minmax(400px, auto);
-    grid-column-gap: 30px;
-    grid-row-gap: 50px;
-  }
+	.place {
+		grid-template-rows: repeat(2, auto);
+		grid-template-columns: repeat(2, auto);
+		row-gap: 48px;
+		column-gap: calc(32px + (100vw - 1024px) * (8 / 256));
+	}
 }
 
 @media screen and (min-width: 1280px) {
-  .place {
-    width: 984px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: minmax(50px, auto) minmax(400px, auto);
-    grid-column-gap: 40px;
-    grid-row-gap: 50px;
-  }
+	.place {
+		grid-template-rows: repeat(2, auto) auto;
+		grid-template-columns: repeat(2, auto);
+		row-gap: 48px;
+		column-gap: 40px;
+	}
 }

@@ -1,18 +1,11 @@
 /* @import url(./__wrapper/global__wrapper.css); */
 
 .page {
-  background-color: #2a2c2f;
-  font-family: Inter, sans-serif;
-  width: 100vw;
-  color: white;
-  border: none;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  max-width: 1280px;
-  min-width: 240px;
-  box-sizing: border-box;
-  margin: 0 auto;
+    background-color: #2a2c2f;
+    width: 100vw;
+    border: none;
+    max-width: 1280px;
+    min-width: 240px;
+    box-sizing: border-box;
+    margin: 0 auto;
 }

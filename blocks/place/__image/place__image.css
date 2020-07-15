@@ -34,3 +34,10 @@
 		align-self: start;
 	}
 }
+
+@media screen and (min-width: 1280px) {
+	.place__image {
+		--img-size: 460px;
+		align-self: start;
+	}
+}

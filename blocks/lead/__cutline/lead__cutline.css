@@ -1,17 +1,31 @@
 .lead__cutline {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 1.2;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  align-self: flex-start;
-  margin-block-end: 0;
-  text-align: left;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    align-self: flex-start;
+    padding-top: 8px;
+    text-align: left;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
-@media screen and (min-width: 928px) and (max-width: 1023px) {
-  .lead__cutline {
-    padding-left: calc((100vw - 928px) / 2);
-  }
+@media screen and (max-width: 1019px) {
+    .lead__cutline {
+        padding-left: var(--padding);
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1023px) {
+    .lead__cutline {
+        padding-left: calc((100vw - 928px) / 2);
+    }
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1279px) {
+    .lead__cutline {
+        padding-left: calc((100vw - (928px + 0.21875 * (100vw - 1024px)) - 2 * var(--padding)) / 2);
+    }
 }

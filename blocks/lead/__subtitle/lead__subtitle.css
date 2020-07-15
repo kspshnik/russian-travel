@@ -1,39 +1,43 @@
-.lead__subtitle {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.25;
-  width: 288px;
-  text-align: center;
-  margin: calc(16px + 0.035714 * (100vw - 320px)) auto
-    calc(40px + 0.035714 * (100vw - 320px)) auto;
-  border: none;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .lead__subtitle {
-    font-size: 30px;
-    line-height: 1.2;
-    width: 640px;
-    margin: 32px auto 56px auto;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .lead__subtitle {
-    font-size: 30px;
-    line-height: 1.2;
-    width: 640px;
-    margin: 32px auto calc(56px + (8 / 256) * (100vw - 1024px)) auto;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .lead__subtitle {
-    font-size: 30px;
-    line-height: 1.2;
-    width: 640px;
-    margin: 32px auto 64px auto;
-  }
-}
+            .lead__subtitle {
+                font-family: Inter;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 1.25;
+                width: 288px;
+                text-align: center;
+                border: none;
+                margin-block-start: 0;
+                margin-block-end: 0;
+                margin-top: 16px;
+                margin-bottom: 40px;
+            }
+            
+            @media screen and (min-width: 321px) and (max-width: 767px) {
+                .lead__subtitle {
+                    margin-top: calc(16px + (100vw - 768px) * (16 / 256));
+                    margin-bottom: calc(40px + (100vw - 768px) * (16 / 256));
+                }
+            }
+            
+            @media screen and (min-width: 768px) {
+                .lead__subtitle {
+                    font-size: 30px;
+                    line-height: 1.2;
+                    width: 640px;
+                    margin-top: 32px;
+                    margin-bottom: 56px;
+                }
+            }
+            
+            @media creen and (min-width: 1024px) and (max-width: 1279px) {
+                .lead__subtitle {
+                    margin-bottom: calc(56px + (100vw - 1024px) * (8 / 256));
+                }
+            }
+            
+            @media screen and (min-width: 1280px) {
+                .lead__subtitle {
+                    margin-bottom: 64px;
+                }
+            }

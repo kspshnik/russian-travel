@@ -3,14 +3,16 @@
 @import url(./__image/lead__image.css);
 @import url(./__cutline/lead__cutline.css);
 .lead {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding-top: 0;
-  padding-right: var(--padding);
-  padding-bottom: 0;
-  padding-left: var(--padding);
-  margin: 0;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    /* width: 100%;*/
+}
+
+@media screen and (min-width: 1024px) {
+    .lead {
+        padding: 0 var(--padding);
+    }
 }

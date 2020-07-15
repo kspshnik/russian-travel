@@ -49,7 +49,7 @@
 
 @media screen and (min-width: 1280px) {
 	.place {
-		grid-template-rows: calc(40px + (100vw - 620px) * (6 / 148)) auto;
+		grid-template-rows: repeat(2, auto) auto;
 		grid-template-columns: repeat(2, auto);
 		row-gap: 48px;
 		column-gap: 40px;

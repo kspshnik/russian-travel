@@ -6,11 +6,18 @@
 	line-height: 1.09;
 	text-align: left;
 	vertical-align: bottom;
+	max-width: 320px;
 }
-@media screen and (min-width: 631px) and (max-width: 767px) {
+@media screen and (min-width: 321px) and (max-width: 620px) {
+	.place__title {
+		padding: 0 var(--padding);
+	}
+}
+@media screen and (min-width: 621px) and (max-width: 767px) {
 	.place__title {
 		align-self: start;
 		justify-self: start;
+		max-width: calc(320px + (100vw - 620px) * (20 / 148));
 	}
 }
 

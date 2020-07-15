@@ -5,6 +5,7 @@
 	height: var(--img-size);
 	margin: 0;
 	align-self: center;
+	white-space: break-spaces;
 }
 
 @media screen and (min-width: 342px) and (max-width: 620px) {

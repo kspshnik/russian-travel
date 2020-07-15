@@ -2,17 +2,32 @@
 @import url(./__link/footer__link.css);
 @import url(./__copyright/footer__copyright.css);
 .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	--foot-pad: 16px;
+	--foot-top: 64px;
+	padding: var(--foot-top) var(--foot-pad) 24px var(--foot-pad);
 }
 
-@media screen and (min-width: 768px) {
-  .footer {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-  }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.footer {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+
+		--foot-top: calc(88px + (100vw - 768px) * (4 / 256));
+		--foot-pad: calc(24px + (100vw - 768px) * (24 / 256));
+	}
+}
+@media screen and (min-width: 1024px) {
+	.footer {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+
+		--foot-top: 92px;
+		--foot-pad: 48px;
+	}
 }

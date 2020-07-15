@@ -3,25 +3,8 @@
 @import url(./__title/cover__title.css);
 @import url(./__subtitle/cover__subtitle.css);
 .cover {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100vw;
-  height: calc(0.625 * 100vw);
-  background-image: url(../../images/trains_to_sunset.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-origin: border-box;
-  background-size: cover;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
-}
-@media screen and (min-width: 1184px) {
-  .cover {
-    min-width: 320px;
-    width: 1184px;
-    height: 740px;
-  }
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 }

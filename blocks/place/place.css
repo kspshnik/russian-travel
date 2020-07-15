@@ -33,8 +33,8 @@
     .place {
         grid-template-rows: repeat(2, auto);
         grid-template-columns: repeat(2, auto);
-        row-gap: calc(42px + (100vw - 620px) * (6 / 148));
-        column-gap: calc(25px + (100vw - 620px) * (3 / 148));
+        row-gap: 48px;
+        column-gap: calc(28px + (100vw - 768px) * (4 / 256));
     }
 }
 
@@ -42,8 +42,8 @@
     .place {
         grid-template-rows: repeat(2, auto);
         grid-template-columns: repeat(2, auto);
-        row-gap: calc(42px + (100vw - 620px) * (6 / 148));
-        column-gap: calc(25px + (100vw - 620px) * (3 / 148));
+        row-gap: 48px;
+        column-gap: calc(32px + (100vw - 1024px) * (8 / 256));
     }
 }
 
@@ -51,7 +51,7 @@
     .place {
         grid-template-rows: calc(40px + (100vw - 620px) * (6 / 148)) auto;
         grid-template-columns: repeat(2, auto);
-        row-gap: calc(42px + (100vw - 620px) * (6 / 148));
-        column-gap: calc(25px + (100vw - 620px) * (3 / 148));
+        row-gap: 48px;
+        column-gap: 40px;
     }
 }

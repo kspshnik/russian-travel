@@ -3,8 +3,33 @@
 @import url(./__title/cover__title.css);
 @import url(./__subtitle/cover__subtitle.css);
 .cover {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
+    --cover-margin: 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .cover {
+        --cover-margin: calc(33px + (100vw - 320px) * (82 / 488));
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .cover {
+        --cover-margin: calc(105px + (100vw - 768px) * (80 / 256));
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .cover {
+        --cover-margin: calc(195px + (100vw - 1024px) * (50 / 256));
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .cover {
+        --cover-margin: 245px;
+    }
 }

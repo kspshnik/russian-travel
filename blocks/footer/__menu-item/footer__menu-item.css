@@ -1,0 +1,19 @@
+.footer__menu-item {
+    padding: 0;
+    display: block;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .footer__menu-item {
+        margin: 16px auto 16px 16px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer__menu-item {
+        margin-right: 18px;
+    }
+    .footer__menu-item:last-of-type {
+        margin-right: 0;
+    }
+}

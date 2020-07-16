@@ -15,7 +15,6 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .footer {
         flex-direction: row;
-        align-items: center;
         justify-content: space-between;
         --foot-top: calc(88px + (100vw - 768px) * (4 / 256));
         --foot-pad: calc(24px + (100vw - 768px) * (24 / 256));
@@ -25,7 +24,6 @@
 @media screen and (min-width: 1024px) {
     .footer {
         flex-direction: row;
-        align-items: center;
         justify-content: space-between;
         --foot-top: 92px;
         --foot-pad: 48px;

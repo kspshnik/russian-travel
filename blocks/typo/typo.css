@@ -1,5 +1,6 @@
 .typo {
     font-family: 'Inter', ‘Arial’, sans-serif;
+    font-style: normal;
     color: #ffffff;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;

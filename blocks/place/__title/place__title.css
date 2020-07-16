@@ -1,40 +1,42 @@
 .place__title {
-	box-sizing: border-box;
-	margin: 0;
-	font-weight: 900;
-	font-size: 32px;
-	line-height: 1.09;
-	text-align: left;
-	vertical-align: bottom;
-	max-width: 320px;
+    box-sizing: border-box;
+    margin: 0;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 1.09;
+    text-align: left;
+    vertical-align: bottom;
+    max-width: 320px;
 }
-@media screen and (min-width: 321px) and (max-width: 620px) {
-	.place__title {
-		padding: 0 var(--padding);
-	}
+
+@media screen and (min-width: 320px) and (max-width: 620px) {
+    .place__title {
+        padding: 0 var(--padding);
+    }
 }
+
 @media screen and (min-width: 621px) and (max-width: 767px) {
-	.place__title {
-		align-self: start;
-		justify-self: start;
-		max-width: calc(320px + (100vw - 620px) * (20 / 148));
-	}
+    .place__title {
+        align-self: start;
+        justify-self: start;
+        max-width: calc(320px + (100vw - 620px) * (20 / 148));
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-	.place__title {
-		font-size: 42px;
-		line-height: 1.1;
-		align-self: start;
-		justify-self: start;
-	}
+    .place__title {
+        font-size: 42px;
+        line-height: 1.1;
+        align-self: start;
+        justify-self: start;
+    }
 }
 
 @media screen and (min-width: 1024px) {
-	.place__title {
-		font-size: 72px;
-		line-height: 1.06;
-		align-self: start;
-		justify-self: start;
-	}
+    .place__title {
+        font-size: 72px;
+        line-height: 1.06;
+        align-self: start;
+        justify-self: start;
+    }
 }

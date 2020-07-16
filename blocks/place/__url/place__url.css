@@ -1,7 +1,7 @@
 .place__url {
     box-sizing: border-box;
     display: block;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 18px;
     line-height: 1.22;
     text-align: left;

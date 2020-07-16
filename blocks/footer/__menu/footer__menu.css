@@ -1,13 +1,14 @@
 .footer__menu {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 @media screen and (min-width: 768px) {
-  .footer__menu {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
+    .footer__menu {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
 }
